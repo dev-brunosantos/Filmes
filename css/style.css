@@ -7,7 +7,7 @@
     body {
         min-width: 900px;
         max-width: 5000px;
-        height: 100%;
+        height: 100vh;
         margin: 0 auto;
     }
     
@@ -48,7 +48,8 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: purple;
+        background-image: linear-gradient(to bottom, purple,white);
+        /* background-color: purple; */
         /* background-image: linear-gradient(65deg, #afafaf, purple, #340034); */
     }
     h1.propaganda {
@@ -66,9 +67,12 @@
         width: 1000px;
     }
     p.propaganda_informacao2 {
-        color: white;
+        /* color: white; */
+        color: purple;
         font-size: 25px;
+        font-weight: bold;
         text-align: center;
+        text-shadow: 0px 0px 20px blue;
         width: 1200px;
     }
     /* ____________________________ */
@@ -103,7 +107,8 @@
         width: 40%;
     }
     form {
-        width: 70%;
+        min-width: 200px;
+        max-width: 70%;
         height: 80%;
         display: flex;
         flex-direction: column;
@@ -120,7 +125,7 @@
     }
     .formulario a {
         margin: 0 auto;
-        min-width: 250px;
+        min-width: 100px;
         max-width: 300px;
         border: double white;
         border-radius: 20px;
@@ -191,8 +196,9 @@
         color: purple;
         font-weight: bold;
         text-shadow: 0px 0px 30px black;
+        background-image: linear-gradient(to bottom, white, purple);
     }
-    .imagem, .varias_telas {
+    .imagem {
         width: 30%;
         height: 300px;
         display: flex;
@@ -208,11 +214,25 @@
         border-radius: 20px;
         box-shadow: 0px 0px 50px #570057;
     }
+    .varias_telas {
+        width: 30%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #9f9f9fb0;
+        border: 4px double;
+        border-radius: 20px;
+    }
     .varias_telas h2 {
+        color: black;
         font-size: 30px;
         margin-bottom: 10px;
     }
     .varias_telas p {
+        color: black;
         font-size: 18px;
         margin-bottom: 10px;
     }
@@ -228,6 +248,7 @@
         align-items: center;
     }
     .modelos_de_telas {
+        color: black;
         width: 120px;
         border: double transparent;
         border-radius: 5px;
